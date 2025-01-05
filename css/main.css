@@ -1,0 +1,38 @@
+.card {
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-sizing: border-box;
+    width: 350px;
+    font-family: sans-serif;
+    padding: 14px;
+}
+.tags {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 16px;
+}
+.tag {
+    font-size: 0.9em;
+    padding: 4px 8px;
+    border-radius: 4px;
+}
+.imp1 {
+    background-color: #e0d8ff;
+    color: #4e1f9c;
+}
+.imp2 {
+    background-color: #fffcad;
+    color: #6D434A;
+}
+.circle {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-left: auto;
+    background-color: #fffcad;
+}

@@ -1,0 +1,19 @@
+.badge {
+    padding: 4px 16px;
+    background-color: #ff9999;
+    color: #440000;
+}
+.round {
+    border-radius: 4em;
+}
+.rect {
+    border-radius: 4px;
+}
+* {
+    font-family: sans-serif;
+}
+.badges-container {
+    display: flex;
+    gap: 2em;
+    margin: 2em;
+}
