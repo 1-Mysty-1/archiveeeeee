@@ -9,9 +9,6 @@
 .rect {
     border-radius: 4px;
 }
-* {
-    font-family: sans-serif;
-}
 .badges-container {
     display: flex;
     gap: 2em;

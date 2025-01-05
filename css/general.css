@@ -1,0 +1,9 @@
+* {
+    font-family: sans-serif;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+}

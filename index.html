@@ -2,27 +2,42 @@
 <html>
     <head>
         <title>Flex</title>
-        <link rel="stylesheet" href="css/main.css"/>
-        <link rel="stylesheet" href="css/alerts.css"/>
-        <link rel="stylesheet" href="css/badges.css"/>
-        <link rel="stylesheet" href="css/cards.css"/>
+
+        <link rel="stylesheet" href="./css/general.css">
+        <link rel="stylesheet" href="./css/alerts.css">
+        <link rel="stylesheet" href="./css/badges.css">
+        <link rel="stylesheet" href="./css/cards.css">
+        <link rel="stylesheet" href="./css/profile.css">
+        <link rel="stylesheet" href="./css/tags.css">
+        <link rel="stylesheet" href="./css/tasks.css">
+        <link rel="stylesheet" href="./css/photo_cards.css">
+
         <meta name="viewport" content="width=device-width"/>
     </head>
     <body>
         <main>
-            <div id="task123">
-                <div class="card">
-                    <h2 class="card-title">End-to-End Testing</h2>
-                    <div class="tags">
-                        <span class="tag imp1">Deployment</span>
-                        <span class="tag imp2">07 Jun</span>
+
+            <div class="task1">
+                <div class="task_card">
+
+                    <p class="task_card_title">End-to-End Testing</p>
+
+                    <div class="task_tags">
+                        <span class="task_tag purple_tag">Deployment</span>
+                        <span class="task_tag yellow_tag">07 Jun</span>
                     </div>
+
                     <div class="details">
-                        <input type="checkbox" class="chkbx" id="card_chkbx">
-                        <label for="card_chkbx" class="chkbx_name">KAN-8</label>
+                        <input type="checkbox" id="task_card_chkbx">
+                        <label for="task_card_chkbx">KAN-8</label>
                     </div>
-                    <div class="circle">D</div>
+
+                    <div class="profile_photo">D</div>
+
                 </div>
+            </div>
+
+            <div class="task2">
                 <div class="badges-container">
                     <div class="badge round">
                         Badges
@@ -31,6 +46,9 @@
                         Badges
                     </div>
                 </div>
+            </div>
+
+            <div class="task3">
                 <div class="alerts-container">
                     <div class="alert">
                         <span class="alert-symbol">[!]</span>
@@ -39,24 +57,29 @@
                     </div>
                 </div>
             </div>
-            <div id="task4">
-                <div class="perscard">
-                    <img class="perscard_img" src="img/1.jpg"/>
-                    <div class="perscard_text">
-                      <span class="perscard_title">Card Title</span>
-                       <span class="perscard_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores in expedita esse libero doloremque. Eligendi iste consequatur laudantium aliquam ullam minima rerum, ab, culpa animi blanditiis assumenda ut odio obcaecati!</span>
-                      <span class="perscard_foot">Last updated 3 mins ago</span>
+
+            <div class="task4">
+
+                <div class="photo_card">
+                    <img class="photo_card_img" src="img/1.jpg"/>
+                    <div class="photo_card_text">
+                      <span class="photo_card_title">Card Title</span>
+                       <span class="photo_card_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores in expedita esse libero doloremque. Eligendi iste consequatur laudantium aliquam ullam minima rerum, ab, culpa animi blanditiis assumenda ut odio obcaecati!</span>
+                      <span class="photo_card_footer">Last updated 3 mins ago</span>
                     </div>
                 </div>
-                <div class="perscard"> 
-                    <div class="perscard_text">
-                        <span class="perscard_title">Card Title</span>
-                        <span class="perscard_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores in expedita esse libero doloremque. Eligendi iste consequatur laudantium aliquam ullam minima rerum, ab, culpa animi blanditiis assumenda ut odio obcaecati!</span>
-                        <span class="perscard_foot">Last updated 3 mins ago</span>
+
+                <div class="photo_card"> 
+                    <div class="photo_card_text">
+                        <span class="photo_card_title">Card Title</span>
+                        <span class="photo_card_desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Dolores in expedita esse libero doloremque. Eligendi iste consequatur laudantium aliquam ullam minima rerum, ab, culpa animi blanditiis assumenda ut odio obcaecati!</span>
+                        <span class="photo_card_foot">Last updated 3 mins ago</span>
                     </div>
-                    <img class="perscard_img" src="img/1.jpg"/>
+                    <img class="photo_card_img" src="img/1.jpg"/>
                 </div>
+
             </div>
+
         </main>
     </body>
 </html>
