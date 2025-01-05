@@ -1,4 +1,6 @@
-.card {
+/* Main task-card style */
+
+.task_card {
     display: flex;
     flex-direction: column;
     border: 1px solid #ddd;
@@ -8,31 +10,32 @@
     font-family: sans-serif;
     padding: 14px;
 }
-.tags {
+
+.task_card_title {
+    font-weight: bolder;
+    font-size: 1.3em;
+}
+
+/* Main tags style settings */
+
+.task_tags {
     display: flex;
     gap: 8px;
     margin-bottom: 16px;
 }
-.tag {
+.task_tag {
     font-size: 0.9em;
     padding: 4px 8px;
     border-radius: 4px;
 }
-.imp1 {
+
+/* Colours */
+
+.purple_tag {
     background-color: #e0d8ff;
     color: #4e1f9c;
 }
-.imp2 {
+.yellow_tag {
     background-color: #fffcad;
     color: #6D434A;
-}
-.circle {
-    width: 30px;
-    height: 30px;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-left: auto;
-    background-color: #fffcad;
 }

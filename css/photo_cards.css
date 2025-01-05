@@ -1,9 +1,9 @@
-main {
+.task4 {
     display: flex;
-    flex-flow: column wrap;
-    justify-content: space-around;
+    flex-direction: row;
 }
-.perscard {
+
+.photo_card {
     display: flex;
     flex-direction: column;
     width: 350px;
@@ -13,25 +13,25 @@ main {
     margin-left: 2em;
     overflow: hidden;
 }
-.perscard_text {
+
+.photo_card_text {
     display: flex;
     flex-direction: column;
     padding: 15pt;
 }
-.perscard_img{
+
+.photo_card_img {
     max-width: 100%;
     object-fit: cover;
 }
-.perscard_title {
+
+.photo_card_title {
     padding-top: 1em;
     padding-bottom: 1em;
     font-weight: bold;
 }
-.perscard_foot {
+
+.photo_card_footer {
     font-size: 0.8em;
     padding-top: 2em;
-}
-#task4 {
-    display: flex;
-    flex-direction: row;
 }
