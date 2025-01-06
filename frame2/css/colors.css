@@ -8,8 +8,8 @@
     border-color: #5227CC;
     color: #ffffff;
 }
-.purple-solid > div {
-    border-top: 1px solid #5227CC;  
+.purple-solid > .task-card-title-container {
+    border-color: #5227CC;  
 }
 
 /* gray */
@@ -18,8 +18,8 @@
     border-color: #484848;
     color: #ffffff;
 }
-.gray-solid > div {
-    border-top: 1px solid #484848;  
+.gray-solid > .task-card-title-container {
+    border-color: #484848;  
 }
 
 /* green */
@@ -28,8 +28,8 @@
     border-color: #136941;
     color: #ffffff;
 }
-.green-solid > div {
-    border-top: 1px solid #136941;  
+.green-solid > .task-card-title-container {
+    border-color: #136941;  
 }
 
 /* yellow */
@@ -38,8 +38,8 @@
     border-color: #CC9A06;
     color: #343A40;
 }
-.yellow-solid > div {
-    border-top: 1px solid #CC9A06;  
+.yellow-solid > .task-card-title-container {
+    border-color:#CC9A06;  
 }
 
 /* red */
@@ -48,8 +48,8 @@
     border-color: #B02A37;
     color: #ffffff;
 }
-.red-solid > div {
-    border-top: 1px solid #B02A37;  
+.red-solid > .task-card-title-container {
+    border-color: #B02A37;  
 }
 
 /* cyan */
@@ -58,9 +58,10 @@
     border-color: #117A8B;
     color: #ffffff;
 }
-.cyan-solid > div {
-    border-top: 1px solid #117A8B;  
+.cyan-solid > .task-card-title-container {
+    border-color: #117A8B;  
 }
+
 /* sorting by type of cards */
 
 /* base of special cards */
@@ -68,10 +69,10 @@
     background-color: #ffffff;
     color: #000;
 }
-.special-card > div {
-    border-top: 1px solid #aaa;
+.special-card > div.task-card-title-container {
+    border-bottom: 1px solid #aaa;
+    color: #000;
 }
-
 /* primary purple card */
 .primary-card {
     border-color: #5227CC;
