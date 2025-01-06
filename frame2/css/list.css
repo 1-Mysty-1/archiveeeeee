@@ -1,0 +1,32 @@
+/* list without bullets */
+ul.list-items {
+    list-style-type: none;
+    width: 350px;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+/* for list items */
+.list-item-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+}
+
+/* for rounded corners */
+.begin-list {
+    border-radius: 8px 8px 0px 0px;
+}
+.end-list {
+    border-radius: 0px 0px 8px 8px;
+}
+
+/* for badges */
+.list-item-badge {
+    border-radius: 4px;
+    padding: 0.2em 0.6em; 
+    background-color: #7749F8;
+    color: #fff;
+}
