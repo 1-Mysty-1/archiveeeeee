@@ -1,0 +1,142 @@
+/* General */
+
+#card {
+    font-family: sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    gap: 3em;
+}
+
+/* Card container */
+
+.card__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 400px;
+    border-radius: 12px;
+    border: 2px solid #000;
+}
+
+/* Card header */
+
+.card__header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 1em;
+}
+
+/* Card profile photo */
+
+.card__profile__photo {
+    padding: 1em 1.2em;
+    background-color: #ff9999;
+    color: #440000;
+    border-radius: 50%;
+}
+
+/* Card content */
+
+/* Card header */
+
+.card__header__title__container {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: flex-start;
+    width: 70%;
+    gap: 1em;
+}
+
+/* Card title */
+
+.card__header__title {
+    font-weight: bold;
+}
+
+/* Card action button */
+
+.card__action {
+    font-size: 2em;
+}
+
+/* Card content */
+
+.card__image__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Card image */
+
+.card__image {
+    width: 400px;
+    height: 300px;
+}
+
+/* Card description */
+
+.card__description__container {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1em;
+}
+
+/* Card title */
+
+.card__title {
+    font-size: 1.1em;
+    padding-bottom: 0.5em;
+}
+
+/* Card subtitle */
+
+.card__subtitle {
+    font-size: 0.9em;
+    padding-bottom: 0.5em;
+}
+
+/* Card description */
+
+.card__description {
+    padding-top: 1em;
+}
+
+/* Card buttons */
+
+.card__buttons__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    padding: 1em;
+    gap: 1em;
+}
+
+/* Base of card buttons */
+
+.card__button {
+    padding: 1em 2em;
+    border-radius: 100px;
+}
+
+/* Button styles */
+
+.hollow__button {
+    border: 2px solid #65558f;
+    color: #65558f;
+}
+
+.solid__button {
+    background-color: #65558f;
+    color: #fff;
+}
