@@ -1,0 +1,319 @@
+/* TASKS */
+#task1 {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 3em;
+}
+
+#task2 {
+    display: flex;
+    flex-flow: column wrap;
+    margin: 3em 0 3em 0;
+    font-family: sans-serif;
+}
+
+#task3 {
+    display: flex;
+    flex-flow: column wrap;
+    font-family: sans-serif;
+    margin-left: 3em;
+    justify-content: flex-start;
+}
+
+/* PAGINATION */
+.pagination {
+    display: inline-flex;
+    margin-top: 1em;
+    width: 400px;
+}
+
+.pagination a {
+    color: black;
+    float: left;
+    padding: 8px 16px;
+    text-decoration: none;
+    border: 1px solid #ccc;
+}
+
+.pagination a.active {
+    background-color: #7749f8;
+    color: white;
+    border: 1px solid #7749f8;
+}
+
+.pagination a:hover:not(.active):not(.disabled) {
+    background-color: #ddd;
+}
+
+.pagination a.disabled {
+    color: #888;
+    border: 1px solid #ccc;
+}
+
+/* only for split pagination */
+
+.pagination.split a {
+    margin: 3px;
+    border-radius: 5px;
+}
+
+/* only for group pagination */
+
+.pagination.group a.next {
+    border-radius: 0px 5px 5px 0px;
+}
+
+.pagination.group a.prev {
+    border-radius: 5px 0px 0px 5px;
+}
+
+/* for list items */
+
+ul.list__items {
+    list-style-type: none;
+    width: 350px;
+    margin-top: 0;
+    padding-left: 0;
+}
+
+/* for list item container */
+
+.list__item__container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #ddd;
+    padding: 0.5em;
+}
+
+/* for rounded corners */
+
+.begin__list {
+    border-radius: 8px 8px 0px 0px;
+}
+
+.end__list {
+    border-radius: 0px 0px 8px 8px;
+}
+
+/* for badges */
+
+.list__item__badge {
+    border-radius: 4px;
+    padding: 0.2em 0.6em; 
+    background-color: #7749F8;
+    color: #fff;
+}
+
+/* colors schemes of task cards */
+
+/* sorting by colors */
+
+/* purple */
+
+div.purple__solid {
+    background-color: #7749F8;
+    border-color: #5227CC;
+    color: #ffffff;
+}
+
+div.purple__solid > .task__card__title__container {
+    border-color: #5227CC;  
+}
+
+/* gray */
+
+div.gray__solid {
+    background-color: #6C757D;
+    border-color: #484848;
+    color: #ffffff;
+}
+
+div.gray__solid > .task__card__title__container {
+    border-color: #484848;  
+}
+
+/* green */
+
+div.green__solid {
+    background-color: #28A745;
+    border-color: #136941;
+    color: #ffffff;
+}
+
+div.green__solid > .task__card__title__container {
+    border-color: #136941;  
+}
+
+/* yellow */
+
+div.yellow__solid {
+    background-color: #FFC107;
+    border-color: #CC9A06;
+    color: #343A40;
+}
+
+div.yellow__solid > .task__card__title__container {
+    border-color:#CC9A06;  
+}
+
+/* red */
+
+div.red__solid {
+    background-color: #DC3545;
+    border-color: #B02A37;
+    color: #ffffff;
+}
+
+div.red__solid > .task__card__title__container {
+    border-color: #B02A37;  
+}
+
+/* cyan */
+
+div.cyan__solid {
+    background-color: #17A2B8;
+    border-color: #117A8B;
+    color: #ffffff;
+}
+
+div.cyan__solid > .task__card__title__container {
+    border-color: #117A8B;  
+}
+
+/* sorting by type of cards */
+
+/* base of special cards */
+
+div.special__card {
+    background-color: #ffffff;
+    color: #000;
+}
+
+div.special__card > div.task__card__title__container {
+    border-color: #aaa;
+    color: #000;
+}
+
+/* primary purple card */
+
+div.primary__card {
+    border-color: #5227CC;
+}
+
+div.primary__card > div.task__card__content {
+    color: #5227CC;
+}
+
+/* secondary gray card */
+
+div.secondary__card {
+    border-color: #484848;
+}
+
+div.secondary__card > div.task__card__content {
+    color: #484848;
+}
+
+/* success green card */
+
+div.success__card {
+    border-color: #28A745;
+}
+
+div.success__card > div.task__card__content { 
+    color: #28A745;
+}
+
+/* warning yellow card */
+
+div.warning__card {
+    border-color: #FFC107;
+}
+
+div.warning__card > div.task__card__content {
+    color: #FFC107;
+}
+
+/* danger red card */
+
+div.danger__card {
+    border-color: #DC3545;
+}
+
+div.danger__card > div.task__card__content {
+    color: #DC3545;
+}
+
+/* info cyan card */
+
+div.info__card {
+    border-color: #17A2B8;
+}
+
+div.info__card > div.task__card__content {
+    color: #17A2B8;
+}
+
+/* light card */
+
+div.light__card {
+    border-color: #aaa;
+}
+
+div.light__card > div.task__card__content {
+    color: #aaa;
+}
+
+/* dark card */
+
+div.dark__card {
+    border-color: #000;
+}
+
+div.dark__card > div.task__card__content {
+    color: #000;
+}
+
+/* base of task cards */
+
+.task__card {
+    display: flex;
+    flex-flow: column wrap;
+    width: 350px;
+    border-radius: 16px;
+    border: 1px solid;
+    font-family: sans-serif;
+}
+
+/* content of task cards */
+
+.task__card__content {
+    display: flex;
+    flex-flow: column wrap;
+    padding-bottom: 1em;
+    padding-left: 1em;
+}
+
+/* title of task cards */
+
+.task__card__title {
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    padding-left: 1em;
+    font-weight: bolder;
+}
+
+/* border for title container of task cards */
+
+.task__card__title__container {
+    border-bottom: 1px solid;
+}
+
+/* special title of task cards */
+
+.task__card__spectitle {
+    margin-top: 1em;
+    margin-bottom: 0.5em;
+    font-weight: bolder;
+}
