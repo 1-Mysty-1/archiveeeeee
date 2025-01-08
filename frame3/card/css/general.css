@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Alice&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
 /* General */
 
 #card {
@@ -19,7 +21,8 @@
     justify-content: center;
     width: 400px;
     border-radius: 12px;
-    border: 2px solid #000;
+
+    border: 2px solid #606060;
 }
 
 /* Card header */
@@ -64,6 +67,7 @@
 
 .card__action {
     font-size: 2em;
+    color: #49454F;
 }
 
 /* Card content */
@@ -102,12 +106,15 @@
 .card__subtitle {
     font-size: 0.9em;
     padding-bottom: 0.5em;
+    color: #5F5C65;
+    
 }
 
 /* Card description */
 
 .card__description {
     padding-top: 1em;
+    color: #5F5C65;
 }
 
 /* Card buttons */
