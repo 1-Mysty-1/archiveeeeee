@@ -1,0 +1,93 @@
+/* Font import */
+
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+
+@import url('https://fonts.cdnfonts.com/css/ocr-a-std');
+
+@import url('https://fonts.cdnfonts.com/css/luminari');
+
+/* General */
+
+#gradient__cards {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 3em;
+}
+
+/* Gradient card */
+
+.gradient__card {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    width: 150px;
+    height: 150px;
+    border-radius: 1em;
+    
+}
+
+/* Gradient card content */
+
+.gradient__card__content__container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.gradient__card__content {
+    font-size: 1.5em;
+    font-weight: bolder;
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+/* Font families */
+
+.gradient__card__content.font__georgia {
+    font-family: Georgia, serif;
+}
+
+.gradient__card__content.font__ibm__plex__serif {
+    font-family: 'IBM Plex Serif', serif;
+}
+
+.gradient__card__content.font__consolas {
+    font-family: Consolas, monospace;
+}
+
+.gradient__card__content.font__OCR__A__Std {
+    font-family: 'OCR A Std', sans-serif;
+}
+
+.gradient__card__content.font__Luminari {
+    font-family: 'Luminari', sans-serif;
+}
+
+/* Gradients */
+
+.gradient__card.FF6A00__EA00FF {
+    background: linear-gradient(135deg, #FF6A00, #EA00FF );
+}
+
+.gradient__card.FF8000__007AFF {
+    background: linear-gradient(135deg, #FF8000, #007AFF );
+}
+
+.gradient__card.FF7F50__C71585 {
+    background: linear-gradient(135deg, #1E90FF, #00FFFF );
+}
+
+.gradient__card.A7D1AB__7B68EE {
+    background: linear-gradient(135deg, #A7D1AB, #7B68EE );
+}   
+
+.gradient__card.C04000__483D8B {
+    background: linear-gradient(135deg, #C04000, #483D8B );
+}
