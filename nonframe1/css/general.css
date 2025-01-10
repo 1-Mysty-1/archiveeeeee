@@ -4,6 +4,20 @@
 
 /* General */
 
+/* Disable margin and padding */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Selection color */
+
+*::selection {
+    background-color: #833014;
+    color: #fff;
+}
+
 /* Header */
 
 header {
@@ -39,6 +53,10 @@ a {
     gap: 1em;
     font-weight: bold;
     font-size: 1.3em;
+}
+
+.logo__img {
+    max-width: 48px;
 }
 
 /* Navigation bar */
@@ -107,7 +125,7 @@ main {
 /* Cards */
 
 #cards {
-    font-family: sans-serif;
+    font-family: "roboto", serif;
     display: flex;
     flex-flow: row wrap;
     align-items: center;
@@ -259,3 +277,138 @@ main {
     color: #fff;
 }
 
+/* Footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: "roboto", serif;
+}
+
+/* Footer logo */
+
+.footer__logo__img {
+    max-width: 48px;
+}
+
+.footer__logo__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer__logo__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Footer container */
+
+.footer__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    font-family: "roboto", serif;
+    padding: 5em 3em;
+}
+
+/* Footer description */
+
+.footer__description__container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 33%;
+}
+
+.footer__description {
+    padding-top: 2em;
+    line-height: 2em;
+}
+
+/* Footer menu */
+
+.footer__menu__container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+/* Footer links */
+
+.footer__links__container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+}
+
+.footer__links {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.footer__links__label {
+    font-weight: bold;
+}
+
+.footer__links__element {
+    color: #aaa;
+}
+
+/* Footer following */
+
+.footer__following__title {
+    font-weight: bold;
+}
+
+/* Footer following container */
+
+.footer__following__container {
+    width: 15%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+
+.footer__following {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+
+/* Footer following links color */
+
+.footer__following__link {
+    color: #aaa;
+}
+
+/* Footer social media icons */
+
+.footer__following__img {
+    filter: invert(1);
+    max-width: 24px;
+}
+
+/* Footer following links container */
+
+.footer__following__link__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer__copyright__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    color: #aaa;
+}
