@@ -1,0 +1,164 @@
+/* Font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General */
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "roboto", serif;
+}
+
+a {
+    text-decoration: none;
+}
+
+.menu__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 1em;
+    padding: 1em 3em 1em 3em;
+}
+
+.logo__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.nav__container > a {
+    color: #000;
+}
+
+.nav__container > a+a {
+    margin-left: 3em;
+}
+
+.action__container {
+    padding: 1em;
+    border-radius: 12px;
+    background-color: #000;
+}
+
+.action__container > a {
+    color: #fff;
+}
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    align-items: center;
+    font-family: "roboto", serif;
+}
+
+#title {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+.title__container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+.title__title {
+    font-size: 4em;
+    font-weight: 700;
+}
+
+.title__description {
+    text-align: center;
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+#cards {
+    font-family: sans-serif;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 3em;
+}
+
+.card__container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 12px;
+    border: 2px solid #606060;
+}
+
+.card__content {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1em 1em 1em 2em;
+}
+
+.card__description {
+    padding-top: 1em;
+}
+
+.card__image > span.card__image__label {
+    position: absolute;
+    margin: 1em;
+    padding: 1em 1.5em 1em 1.5em;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+}
+
+.card__image > img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+.card__communication__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.card__communication {
+    width: 80%;
+    padding: 1em 1em 2em 0em;
+    gap: 0.5em;
+    border-top: 1px solid #606060;
+}
+
+.card__communication__number__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-bottom: 0.5em;
+    gap: 1em;
+}
+
+.card__communication__number__img {
+    max-width: 24px;
+}
+
+.card__communication__email__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.card__communication__email__img {
+    max-width: 24px;
+}
