@@ -1,0 +1,562 @@
+/* Font import */
+
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+/* General */
+
+/* Disable margin and padding */
+
+body {
+    padding: 0;
+    margin: 0;
+}
+
+/* Selection color */
+
+*::selection {
+    background-color: #833014;
+    color: #fff;
+}
+
+/* Header */
+
+header {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-between;
+    font-family: "roboto", serif;
+}
+
+/* Disable default link styles */
+
+a {
+    text-decoration: none;
+}
+
+/* Header bar */
+
+.menu__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
+    gap: 1em;
+    padding: 1em 3em 1em 3em;
+}
+
+.logo__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1em;
+    font-weight: bold;
+    font-size: 1.3em;
+}
+
+.logo__img {
+    max-width: 48px;
+}
+
+/* Navigation bar */
+
+.nav__container > a {
+    color: #000;
+    font-weight: 300;
+}
+
+.nav__container > a+a {
+    margin-left: 3em;
+}
+
+/* Button "Get started" */
+
+button.action__link {
+    padding: 1em;
+    border-radius: 12px;
+    background-color: #000;
+    font-weight: bold;
+    color: #fff;
+    border: none;
+    outline: none;
+}
+
+button.action__link:focus {
+    outline: none;
+}
+
+/* Main */
+
+main {
+    display: flex;
+    flex-flow: column wrap;
+    align-content: space-around;
+    align-items: center;
+    font-family: "roboto", serif;
+}
+
+/* Sign in section */
+
+#sign__in {
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    visibility: hidden;
+    opacity: 0;
+    z-index: 1;
+}
+
+/* Show sign in section */
+
+#sign__in:target {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Sign in overlay */
+
+.sign__in__overlay {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+
+/* Sign in container */
+
+.sign__in__container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    width: 350px;
+    height: 350px;
+    border-radius: 12px;
+    border: 2px solid #606060;
+    background-color: #F7F7F7;
+}
+
+/* Sign in title */
+
+.sign__in__title__container {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
+
+.sign__in__title {
+    font-weight: bold;
+}
+
+/* Sign in close button */
+
+.sign__in__close {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    width: 2em;
+    height: 2em;
+    border-radius: 12px;
+    background-color: #F15A29;
+    color: #fff;
+}
+
+/* Sign in form */
+
+.sign__in__form {
+    width: 90%;
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.sign__in__form__container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 90%;
+}
+
+/* Sign in input */
+
+.sign__in__input {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    border: none;
+    border-bottom: 1px solid #aaa;
+    background-color: #F7F7F7;
+    margin-bottom: 1em;
+    width: 100%;
+    
+}
+
+.sign__in__input:focus {
+    outline: none;
+}
+
+.sign__in__input__container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+    width: 100%;
+}
+
+/* Sign in button */
+
+.sign__in__button__container {
+    display: flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
+}
+
+.sign__in__button {
+    width: 100%;
+    border: none;
+    padding: 1em;
+    border-radius: 12px;
+    background-color: #F15A29;
+    color: #fff;
+}
+
+/* Title section */
+
+#title {
+    margin-top: 2em;
+    margin-bottom: 1em;
+}
+
+/* Title container */
+
+.title__container {
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    margin-bottom: 5em;
+}
+
+/* Title content */
+
+.title__title {
+    font-size: 4em;
+    font-weight: 700;
+    color: #F15A29;
+}
+
+.title__description {
+    text-align: center;
+    width: 70%;
+    margin-top: 0.5em;
+}
+
+/* Cards */
+
+#cards {
+    font-family: "roboto", serif;
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 80%;
+    gap: 3em;
+}
+
+/* Card container */
+
+.card__container {
+    display: flex;
+    flex-flow: row wrap;
+    width: 400px;
+    overflow: hidden;
+    border-radius: 8px;
+    border: 1px solid #F15A29;
+}
+
+/* Card content */
+
+.card__content {
+    display: flex;
+    flex-flow: column wrap;
+    padding: 1em 1em 1em 2em;
+}
+
+.card__description {
+    padding-top: 1em;
+}
+
+/* Card image */
+
+.card__image > span.card__image__label {
+    position: absolute;
+    margin: 1em;
+    padding: 1em 1.5em 1em 1.5em;
+    border-radius: 8px;
+    background-color: #fff;
+    color: #000;
+}
+
+.card__image > img {
+    max-width: 100%;
+    object-fit: cover;
+}
+
+/* Card communication (phone and email) */
+
+.card__communication__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.card__communication {
+    width: 80%;
+    padding: 1em 1em 2em 0em;
+    gap: 0.5em;
+    border-top: 1px solid #606060;
+}
+
+/* Card communication (phone) */
+
+.card__communication__phone__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    padding-bottom: 0.5em;
+    gap: 1em;
+}
+
+.card__communication__phone__img {
+    max-width: 24px;
+}
+
+/* Card communication (email) */
+
+.card__communication__email__container {
+    display: flex;
+    flex-flow: row wrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.card__communication__email__img {
+    max-width: 24px;
+}
+
+/* Subscribe form */
+
+#subscribe {
+    width: 70%;
+    margin: 5em;
+}
+
+/* Subscribe container */
+
+.subscribe__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em 1em 2em;
+    gap: 0.5em;
+    border-radius: 12px;
+    background-color: #F15A29;
+}
+
+/* Subscribe title */
+
+.subscribe__title {
+    width: 25%;
+    font-size: 2em;
+    padding: 1em 0em 1em 2em;
+    color: #fff;
+}
+
+/* Subscribe input */
+
+.subscribe__input__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1em 2em 1em 1em;
+    gap: 0.5em;
+    border-radius: 12px;
+    background-color: #fff;
+}
+
+.subscribe__input {
+    border: None;
+}
+
+.subscribe__input:focus {
+    outline: none;
+}
+
+/* Subscribe button */
+
+.subscribe__button {
+    border: none;
+    padding: 1em;
+    border-radius: 12px;
+    background-color: #F15A29;
+    color: #fff;
+}
+
+/* Footer */
+
+footer {
+    background-color: #000;
+    color: #fff;
+    display: flex;
+    flex-flow: column wrap;
+    font-family: "roboto", serif;
+}
+
+/* Footer logo */
+
+.footer__logo__img {
+    max-width: 48px;
+}
+
+.footer__logo__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer__logo__title {
+    font-size: 2em;
+    font-weight: bold;
+}
+
+/* Footer container */
+
+.footer__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: stretch;
+    justify-content: space-between;
+    font-family: "roboto", serif;
+    padding: 5em 3em;
+}
+
+/* Footer description */
+
+.footer__description__container {
+    display: flex;
+    flex-flow: column nowrap;
+    width: 33%;
+}
+
+.footer__description {
+    padding-top: 2em;
+    line-height: 2em;
+}
+
+/* Footer menu */
+
+.footer__menu__container {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+/* Footer links */
+
+.footer__links__container {
+    display: flex;
+    flex-flow: row nowrap;
+    gap: 1em;
+}
+
+.footer__links {
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: flex-start;
+    gap: 1em;
+}
+
+.footer__links__label {
+    font-weight: bold;
+}
+
+.footer__links__element {
+    color: #aaa;
+}
+
+/* Footer following */
+
+.footer__following__title {
+    font-weight: bold;
+}
+
+/* Footer following container */
+
+.footer__following__container {
+    width: 15%;
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+
+.footer__following {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 1em;
+}
+
+/* Footer following links color */
+
+.footer__following__link {
+    color: #aaa;
+}
+
+/* Footer social media icons */
+
+.footer__following__img {
+    filter: invert(1);
+    max-width: 24px;
+}
+
+/* Footer following links container */
+
+.footer__following__link__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    gap: 1em;
+}
+
+.footer__copyright__container {
+    display: flex;
+    flex-flow: row nowrap;
+    align-items: center;
+    justify-content: center;
+    padding: 1em;
+    color: #aaa;
+}
