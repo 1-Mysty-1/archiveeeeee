@@ -1,3 +1,8 @@
+/* anti-dark-theme-super-good-thing */
+html {
+	background-color: #fff;
+}
+
 /* TASKS */
 #task1 {
     display: flex;
