@@ -1,0 +1,35 @@
+/* cards */
+
+/* container */
+
+.card__container {
+	width: 400px;
+	display: flex;
+	flex-flow: column wrap;
+	border: 2px solid;
+	border-radius: 16px;
+	transition: all 0.3s ease;
+}
+
+/* title */
+
+.card__container__title {
+	border-bottom: 1px solid #aaa;
+	padding: 8px;
+}
+
+/* description */
+
+.card__container__description {
+	padding: 8px;
+}
+
+/* color scheme */
+
+.card__purple {
+	border-color: #5227CC;
+}
+
+.card__purple:hover {
+	box-shadow: 0 0 10px #5227CC;
+}
