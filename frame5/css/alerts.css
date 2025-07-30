@@ -18,8 +18,7 @@
 	width: 400px;
 	justify-content: space-between;
 	align-items: center;
-	padding-left: 16px;
-	padding-right: 16px;
+	padding: 0 16px 0 16px;
 	border-radius: 21px;
 	border-left: 4px solid;
 	border-right: 4px solid;
@@ -34,7 +33,7 @@
 }
 
 .alert__container__close {
-	padding: 0;
+	padding: 1px 2px;
 	border: none;
 	background: none;
 }
@@ -48,7 +47,6 @@
 .alert__warning:hover {
 	background-color: #F59E0B;
 	box-shadow: 0 0 20px #f5930b;
-	transform: translateZ(0);
 }
 /* info (blue) */
 
@@ -59,7 +57,6 @@
 .alert__info:hover {
 	background-color: #3B82F6;
 	box-shadow: 0 0 20px #3B82F6;
-	transform: translateZ(0);
 }
 
 /* done (green) */
@@ -71,7 +68,6 @@
 .alert__done:hover {
 	background-color: #10B981;
 	box-shadow: 0 0 20px #10B981;
-	transform: translateZ(0);
 }
 
 /* error (red) */
@@ -83,5 +79,4 @@
 .alert__error:hover {
 	background-color: #EF4444;
 	box-shadow: 0 0 20px #EF4444;
-	transform: translateZ(0);
 }
